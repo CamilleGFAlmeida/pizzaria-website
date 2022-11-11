@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaTec</title>
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/favicon_io/android-chrome-192x192.png" type="image/x-icon">
+
+    <!-- CSS do index -->
+    <link rel="stylesheet" href="assets/css/estilo.css">
+
+    <!-- Float Button -->
+    <div class="whats">
+        <a href=" https://wa.me/5511986241698?text=Olá! Gostaria de fazer um pedido." target="_blank">
+        <img src="imagens/whats.png" width="140" alt="Fale Conosco pelo Whatsapp">
+       </a>
+    </div>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <!-- <a href="#" class="logo">PizzaTec</a> --> 
+        <img src="imagens/logotipo.png" alt="logotipo" class="logo-img">
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="cardapio.html">Menu</a></li>
+            <li><a href="servicos.html" target="_blank">Serviços</a></li> <!-- Nova Aba -->
+            <li><a href="cadastrologin.html">Cadastro</a></li>
+            <li><a href="#contact">Contato</a></li> 
+            <!-- Modo Dark -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+
+    <!-- Página Inicial -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>A melhor pizzaria da região!</h1>
+            <h2>Escolha logo o seu <br> sabor</h2>
+            <a href="cardapio.html" class="btn">Veja o Menu</a>
+        </div>
+        <div class="home-img">
+            <img src="imagens/Home.png" alt="">
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="imagens/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>Sobre Nós</span>
+            <h2>Dedicação há mais <br> de 20 anos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut, obcaecati explicabo nisi voluptatem cupiditate ex voluptas quisquam deserunt. Nemo rerum quia atque corporis sit, quidem optio ipsam natus numquam.</p> 
+            <a href="sobre.html" class="btn" target="_blank">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Menu</span>
+            <h2>Menu da Semana</h2>
+        </div>
+        <div class="menu-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="imagens/item1.png" alt="">
+                </div>
+                <h2>Pizza da Casa</h2>
+                <h3>Experimente por</h3>
+                <span>R$40.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Caixa do item 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imagens/item2.png" alt="">
+                </div>
+                <h2>Italiana</h2>
+                <h3>Experimente por</h3>
+                <span>R$39.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <!-- Caixa do item 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="imagens/item3.png" alt="">
+                </div>
+                <h2>Especial M&M's</h2>
+                <h3>Experimente por</h3>
+                <span>R$37.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner" id="banner">
+        <div class="heading">
+            <img src="imagens/banner.png" alt="">
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <div class="heading">
+    <div class="s-box">
+        <div class="testimonials">
+          <div class="inner">
+            <h1>Avaliações</h1>
+            <div class="border"></div>
+            <p class="p1">Veja o que nossos clientes dizem!</p>
+            <div class="row">
+              <div class="col">
+                <div class="testimonial">
+                  <img src="imagens/p1.png" alt="">
+                  <div class="name">Ricardo L. Lemos</div>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                  </div>
+                  <p class="paragrafo">
+                    Melhor pizzaria da região! Levei minha família inteira, eles curtiram pra caramba, o atendimento dispensa comentários. 
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="testimonial">
+                  <img src="imagens/p2.png" alt="">
+                  <div class="name">Liana Gomes</div>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                  </div>
+                  <p class="paragrafo">
+                    Pizzaria pica demais! top hein, recomendo... melhor pizzaria do mundo pra levar os amigos e tirar umas boas fotos. 
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="testimonial">
+                  <img src="imagens/p3.png" alt="">
+                  <div class="name">Catarina Alves</div>
+                  <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                  </div>
+                  <p class="paragrafo">
+                   Compartilho meus momentos mais especiais aqui! A comida é excelente e o ambiente é muito agradável, não troco por nenhuma. Love u Guys!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+   
+
+    <!-- Cadastro -->
+    <section class="signin" id="signin">
+        <div class="heading">
+            <span>Cadastro</span>
+            <h2>Venha ser nosso cliente!</h2>
+        </div>
+
+        <div class="signin-container">
+            <div class="heading"></div>
+            <div class="box">
+            <img src="imagens/pizzawt.png" alt="">
+            <h3 id="cadastro">Faça seu Cadastro e comece a fazer seus pedidos.</h3>
+            <div class="btn-size">
+                <a href="cadastrologin.html" class="btn">Cadastre-se</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Serviços</span>
+            <h2>Tudo sobre nosso delivery</h2>
+        </div>
+
+        <div class="services-container">
+            <!-- Caixa 1 -->
+            <div class="s-box">
+                <img src="imagens/cart.png" alt="">
+                <h3>Seu Pedido</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat quas qui tempore provident repellendus repudiandae, laudantium, autem dicta molestiae unde sequi nihil, aspernatur laboriosam. Dolores fuga voluptate impedit minus.</p>
+            </div>
+            <!-- Caixa 2 -->
+            <div class="s-box">
+                <img src="imagens/truck.png" alt="">
+                <h3>Envio</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat quas qui tempore provident repellendus repudiandae, laudantium, autem dicta molestiae unde sequi nihil, aspernatur laboriosam. Dolores fuga volupts.</p>
+            </div>
+            <!-- Caixa 3 -->
+            <div class="s-box">
+                <img src="imagens/delivery.jpg" alt="">
+                <h3>Entrega Delivery</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugiat quas qui tempore provident repellendus repudiandae, laudantium, autem dicta molestiae unde sequi nihil, aspernatur laboriosam. Dolores fuga volupts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato prévia -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Dê-nos a sua opinião!</span>
+            <h2>Fale Conosco!</h2>
+        </div>
+        <a href="contato.html" class="btn" target="_blank">Contate-nos</a>
+    </section>
+
+    <!-- Rodapé -->
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>PizzaTec.</h3>
+            <span>Se conecte com a gente!</span>
+            <div class="social">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Links do Menu</h3>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Links Comerciais</h3>
+            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#Política de Privacidade">Política de Privacidade</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Termos de Privacidade">Termos de Privacidade</a></li>
+             
+        </div>
+        <div class="contact-box address">
+            <h3>Contato</h3>
+            <i class="bx bxs-map"><span>Rua Bell Aliance, 140, SCS</span></i>
+            <i class="bx bxs-phone"><span>(11) 4002-8922</span></i>
+            <i class="bx bxs-envelope"><span>PizzatecCommercial@gmail.com</span></i>
+
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; PizzaTec Todos os Direitos Reservados.</p>
+    </div>
+
+    <!-- Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Referência JS -->
+    <script src="assets/js/principal.js"></script>
+</body>
+</html>

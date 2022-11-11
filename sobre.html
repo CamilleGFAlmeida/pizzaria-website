@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="assets/css/sobrebundle/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilosobre.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="imagens/pizza1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Descubra novos sabores!</span>
+            <h2>
+              Experimente nossos exclusivos<br/>
+              sabores do chefe. 
+            </h2>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="imagens/pizza2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Dedicação e qualidade</span>
+            <h2>
+              Veja o que faz a nossa <br />
+              pizzaria ser diferente. 
+            </h2>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="imagens/pizza3.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Pizza por amor.</span>
+            <h2>
+              Controle de produtos que <br />
+               garante o nosso sucesso. 
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Texto -->
+    <section class="text-section">
+        <div class="text-container">
+            <h1 class="text-h1">Nossa Tradição</h1>
+            <p class="text">
+                A pizzaria PizzaTec está há mais de 20 anos no ramo da gastronomia e surgiu com os imigrantes italianos da família Scarazzo na década de 1940. A primeira filial foi aberta em São Caetano do Sul e hoje abrange mais de 12 regiões em São Paulo. No cardápio enxuto estava o jeito napolitano de se fazer pizza e, com a tradição napolitana, criar novidades na gastronomia paulistana, que se tornaram verdadeiros clássicos: Pizza Margherita, Pizza Napoletana, Calzone (pizza fechada), Tortano (o genuíno pão de linguiça napolitano) e a Pastiera di Grano em receita exclusiva da família, do jeito que se faz na região de Nápoles. 
+            </p>
+            <div class="img">
+                <img src="imagens/pizzaria.png" alt="">
+            </div>
+        </div>
+    </div>
+</div> 
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; PizzaTec Todos os Direitos Reservados.</p>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>

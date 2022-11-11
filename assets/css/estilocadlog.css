@@ -1,0 +1,256 @@
+/* ===== Google Font Import ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 195vh; /* padrão 100vh / sem barra = 180vh */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 43, 43);
+}
+.container{
+    position: relative;
+    max-width: 430px; 
+    width: 100%; /* 100 */ 
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px; 
+    width: 200%;
+    transition: height 0.2s ease;
+}
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+.container.active .login{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container .signup{
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+.container.active .signup{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+.container.active .forms{
+    height: auto; /* padrao 600 altura */ 
+}
+.container .form .title{
+    position: relative; 
+    font-size: 27px;
+    font-weight: 600;
+}
+.form .title::before{
+    content: '';
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: darkred;
+    border-radius: 25px;
+}
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;/* margin-top: 30 */ 
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid){
+    border-bottom-color: red;
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid) ~ i{
+    color: red;
+}
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px; /* padrão 20px */ 
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: red;
+}
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+.form a.text{
+    color: red;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: darkred;
+}
+
+.form .login-signup{
+    margin-top: 30px; /* 30px */ 
+    text-align: center;
+}
+
+
+
+/* Barra de Navegação */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  ::selection /* *  antes dos :: */ 
+  {
+      background: var(--main-color);
+      background: var(--bgava-color); /* para a seção avaliações */ 
+      color: #fff;
+  }
+  
+  :root  
+  {
+      --main-color: #ffb411; 
+      --text-color: #1e1c2a; 
+      --bg-color: #fff; 
+      --bgav-color: #f1f1f1; /* add para a seção de avaliações */ 
+      --bgava-color: #1e1c2a; /* add para a seção de avaliações */ 
+      --ava-color: #37383a; /* para as letras no mode dark da seção avaliação */ 
+  
+      --big-font: 3rem ; /* 4rem padrao */ 
+      --h2-font: 2.24rem ; 
+      --p-font: 0.9rem ; 
+  }
+  
+  section
+  {
+      padding: 50px 10%;
+  }
+  
+  body.active 
+  {
+      --bg-color: #1e1c2a; 
+      --text-color: #fff; 
+  }
+  
+  body
+  {
+      color: var(--text-color);
+  }
+  
+  header
+  {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-color); 
+      padding: 18px 100px; /* padrao 18px */ 
+      box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-img 
+  {
+      width: 4rem;
+      height: 4rem;
+  }
+  
+  .navbar 
+  {
+      display: flex;
+      padding: 5px; /* add */ 
+      margin: 5px; /* add */ 
+  }
+  
+  .navbar a 
+  {
+      font-size: 1rem;
+      padding: 10px 20px;
+      color: var(--text-color);
+      font-weight: 600; /* 500 */ 
+  }
+  
+  .navbar a:hover 
+  {
+      color: var(--main-color);
+  }
+  
+  #menu-icon 
+  {
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+  }
